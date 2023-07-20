@@ -1,0 +1,348 @@
+\hypertarget{group__sprite}{}\doxysection{Sprite}
+\label{group__sprite}\index{Sprite@{Sprite}}
+
+
+\mbox{\hyperlink{struct_sprite}{Sprite}} related functions.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_sprite}{Sprite}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_gaffac42b8b55dacd08b584a6d2d2214cb}{create\+\_\+sprite}} (xpm\+\_\+map\+\_\+t pic, int x, int y, int xspeed, int yspeed)
+\begin{DoxyCompactList}\small\item\em creates sprites \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__sprite_gaf16c6befaac9ffb673b9e3c798d542ed}{destroy\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em destroys sprite \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_ga00657155f71438abaee031bfea9ce9f3}{animate\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp)
+\begin{DoxyCompactList}\small\item\em animates the sprite \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_ga20a0ef78da7b91e05f6baf4a7dc1333d}{draw\+\_\+sprite}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$spr, uint8\+\_\+t $\ast$\mbox{\hyperlink{group__timer_ggada782f3116a896caaa602b70c0c6d8b7a27df5ef1a125f452469fe47a7158cb16}{base}})
+\begin{DoxyCompactList}\small\item\em draws the sprite \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_ga260981868ab7449044e13bcf917982cc}{draw\+\_\+sprite\+\_\+2}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp, uint8\+\_\+t $\ast$\mbox{\hyperlink{group__timer_ggada782f3116a896caaa602b70c0c6d8b7a27df5ef1a125f452469fe47a7158cb16}{base}})
+\begin{DoxyCompactList}\small\item\em same function as draw\+\_\+sprite but fills transparency with black \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_gaba7593d2524934fae5af41b482c5ed4b}{erase\+\_\+sprite\+\_\+screen}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$sp, uint8\+\_\+t $\ast$\mbox{\hyperlink{group__timer_ggada782f3116a896caaa602b70c0c6d8b7a27df5ef1a125f452469fe47a7158cb16}{base}})
+\begin{DoxyCompactList}\small\item\em erases sprite from screen \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_ga488a8e7dcd18dd27bf78de4097f9518e}{move\+\_\+sprite}} (uint8\+\_\+t $\ast$init, \mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$map)
+\begin{DoxyCompactList}\small\item\em moves the sprite \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_ga48e882b044757007f7df7fadb1cd6c5d}{move\+\_\+with\+\_\+arrows}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$spr, uint8\+\_\+t $\ast$init\+\_\+adress, uint8\+\_\+t $\ast$addrs)
+\begin{DoxyCompactList}\small\item\em moves sprite using arrow keys \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_ga4c05e4be3c1959155411619183e1bb54}{move\+\_\+with\+\_\+mouse}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$spr, uint8\+\_\+t $\ast$init\+\_\+adress, uint8\+\_\+t $\ast$addrs, struct packet pp)
+\begin{DoxyCompactList}\small\item\em moves sprite using mouse \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__sprite_ga711da497c094f1fcf0138556b4da0246}{update\+Buffer}} (uint8\+\_\+t $\ast$principal, uint8\+\_\+t $\ast$secondary)
+\begin{DoxyCompactList}\small\item\em double buffer \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_ga3b7f57b76855f7698094e643ca6173f6}{move\+\_\+sans}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$spr, uint8\+\_\+t $\ast$init\+\_\+adress, uint8\+\_\+t $\ast$addrs)
+\begin{DoxyCompactList}\small\item\em moves sans (boss from extreme level) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_ga11c468f4fae9c4fec23c360539f9604b}{move\+\_\+bones}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$spr, uint8\+\_\+t $\ast$init\+\_\+adress, uint8\+\_\+t $\ast$addrs, bool pass, int speed)
+\begin{DoxyCompactList}\small\item\em moves bones if they haven\textquotesingle{}t collided yet \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_gac30241962e36a4bdbd936e2dc27edaf6}{move\+\_\+sans\+\_\+right}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$spr, uint8\+\_\+t $\ast$init\+\_\+adress, uint8\+\_\+t $\ast$addrs)
+\begin{DoxyCompactList}\small\item\em moves sans right (boss from extreme level) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$ \mbox{\hyperlink{group__sprite_ga1e16351b849e7d03a9f6b89ca9c6ea4b}{move\+\_\+sans\+\_\+left}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$spr, uint8\+\_\+t $\ast$init\+\_\+adress, uint8\+\_\+t $\ast$addrs)
+\begin{DoxyCompactList}\small\item\em moves sans left (boss from extreme level) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{struct_sprite}{Sprite}} related functions. 
+
+\begin{DoxyAuthor}{Author}
+Joao Cardoso (\href{mailto:jcard@fe.up.pt}{\texttt{ jcard@fe.\+up.\+pt}}) Added by \href{mailto:pfs@fe.up.pt}{\texttt{ pfs@fe.\+up.\+pt}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__sprite_ga00657155f71438abaee031bfea9ce9f3}\label{group__sprite_ga00657155f71438abaee031bfea9ce9f3}} 
+\index{Sprite@{Sprite}!animate\_sprite@{animate\_sprite}}
+\index{animate\_sprite@{animate\_sprite}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{animate\_sprite()}{animate\_sprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ animate\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+animates the sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_gaffac42b8b55dacd08b584a6d2d2214cb}\label{group__sprite_gaffac42b8b55dacd08b584a6d2d2214cb}} 
+\index{Sprite@{Sprite}!create\_sprite@{create\_sprite}}
+\index{create\_sprite@{create\_sprite}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{create\_sprite()}{create\_sprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ create\+\_\+sprite (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{pic,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{xspeed,  }\item[{int}]{yspeed }\end{DoxyParamCaption})}
+
+
+
+creates sprites 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pic} & array with the sprite\textquotesingle{}s information \\
+\hline
+{\em x} & x coordinate \\
+\hline
+{\em y} & y coordinate \\
+\hline
+{\em xspeed} & x coordinate speed \\
+\hline
+{\em yspeed} & y coordinate speed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_gaf16c6befaac9ffb673b9e3c798d542ed}\label{group__sprite_gaf16c6befaac9ffb673b9e3c798d542ed}} 
+\index{Sprite@{Sprite}!destroy\_sprite@{destroy\_sprite}}
+\index{destroy\_sprite@{destroy\_sprite}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{destroy\_sprite()}{destroy\_sprite()}}
+{\footnotesize\ttfamily void destroy\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp }\end{DoxyParamCaption})}
+
+
+
+destroys sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & sprite \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__sprite_ga20a0ef78da7b91e05f6baf4a7dc1333d}\label{group__sprite_ga20a0ef78da7b91e05f6baf4a7dc1333d}} 
+\index{Sprite@{Sprite}!draw\_sprite@{draw\_sprite}}
+\index{draw\_sprite@{draw\_sprite}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite()}{draw\_sprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ draw\+\_\+sprite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{spr,  }\item[{uint8\+\_\+t $\ast$}]{base }\end{DoxyParamCaption})}
+
+
+
+draws the sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spr} & sprite \\
+\hline
+{\em base} & buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_ga260981868ab7449044e13bcf917982cc}\label{group__sprite_ga260981868ab7449044e13bcf917982cc}} 
+\index{Sprite@{Sprite}!draw\_sprite\_2@{draw\_sprite\_2}}
+\index{draw\_sprite\_2@{draw\_sprite\_2}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite\_2()}{draw\_sprite\_2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ draw\+\_\+sprite\+\_\+2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp,  }\item[{uint8\+\_\+t $\ast$}]{base }\end{DoxyParamCaption})}
+
+
+
+same function as draw\+\_\+sprite but fills transparency with black 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & sprite \\
+\hline
+{\em base} & buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_gaba7593d2524934fae5af41b482c5ed4b}\label{group__sprite_gaba7593d2524934fae5af41b482c5ed4b}} 
+\index{Sprite@{Sprite}!erase\_sprite\_screen@{erase\_sprite\_screen}}
+\index{erase\_sprite\_screen@{erase\_sprite\_screen}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{erase\_sprite\_screen()}{erase\_sprite\_screen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ erase\+\_\+sprite\+\_\+screen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{sp,  }\item[{uint8\+\_\+t $\ast$}]{base }\end{DoxyParamCaption})}
+
+
+
+erases sprite from screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sp} & sprite \\
+\hline
+{\em base} & buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_ga11c468f4fae9c4fec23c360539f9604b}\label{group__sprite_ga11c468f4fae9c4fec23c360539f9604b}} 
+\index{Sprite@{Sprite}!move\_bones@{move\_bones}}
+\index{move\_bones@{move\_bones}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{move\_bones()}{move\_bones()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ move\+\_\+bones (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{spr,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+adress,  }\item[{uint8\+\_\+t $\ast$}]{addrs,  }\item[{bool}]{pass,  }\item[{int}]{speed }\end{DoxyParamCaption})}
+
+
+
+moves bones if they haven\textquotesingle{}t collided yet 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spr} & sprite \\
+\hline
+{\em init\+\_\+adress} & main buffer \\
+\hline
+{\em addrs} & secondary buffer \\
+\hline
+{\em pass} & true in case there has been as collision, false otherwise \\
+\hline
+{\em speed} & 1 for slow, 2 for medium, 3 for fast \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_ga3b7f57b76855f7698094e643ca6173f6}\label{group__sprite_ga3b7f57b76855f7698094e643ca6173f6}} 
+\index{Sprite@{Sprite}!move\_sans@{move\_sans}}
+\index{move\_sans@{move\_sans}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{move\_sans()}{move\_sans()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ move\+\_\+sans (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{spr,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+adress,  }\item[{uint8\+\_\+t $\ast$}]{addrs }\end{DoxyParamCaption})}
+
+
+
+moves sans (boss from extreme level) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spr} & sprite \\
+\hline
+{\em init\+\_\+adress} & main buffer \\
+\hline
+{\em addrs} & secondary buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_ga1e16351b849e7d03a9f6b89ca9c6ea4b}\label{group__sprite_ga1e16351b849e7d03a9f6b89ca9c6ea4b}} 
+\index{Sprite@{Sprite}!move\_sans\_left@{move\_sans\_left}}
+\index{move\_sans\_left@{move\_sans\_left}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{move\_sans\_left()}{move\_sans\_left()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ move\+\_\+sans\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{spr,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+adress,  }\item[{uint8\+\_\+t $\ast$}]{addrs }\end{DoxyParamCaption})}
+
+
+
+moves sans left (boss from extreme level) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spr} & sprite \\
+\hline
+{\em init\+\_\+adress} & main buffer \\
+\hline
+{\em addrs} & secondary buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_gac30241962e36a4bdbd936e2dc27edaf6}\label{group__sprite_gac30241962e36a4bdbd936e2dc27edaf6}} 
+\index{Sprite@{Sprite}!move\_sans\_right@{move\_sans\_right}}
+\index{move\_sans\_right@{move\_sans\_right}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{move\_sans\_right()}{move\_sans\_right()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ move\+\_\+sans\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{spr,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+adress,  }\item[{uint8\+\_\+t $\ast$}]{addrs }\end{DoxyParamCaption})}
+
+
+
+moves sans right (boss from extreme level) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spr} & sprite \\
+\hline
+{\em init\+\_\+adress} & main buffer \\
+\hline
+{\em addrs} & secondary buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_ga488a8e7dcd18dd27bf78de4097f9518e}\label{group__sprite_ga488a8e7dcd18dd27bf78de4097f9518e}} 
+\index{Sprite@{Sprite}!move\_sprite@{move\_sprite}}
+\index{move\_sprite@{move\_sprite}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{move\_sprite()}{move\_sprite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ move\+\_\+sprite (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{init,  }\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{map }\end{DoxyParamCaption})}
+
+
+
+moves the sprite 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init} & buffer \\
+\hline
+{\em map} & sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_ga48e882b044757007f7df7fadb1cd6c5d}\label{group__sprite_ga48e882b044757007f7df7fadb1cd6c5d}} 
+\index{Sprite@{Sprite}!move\_with\_arrows@{move\_with\_arrows}}
+\index{move\_with\_arrows@{move\_with\_arrows}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{move\_with\_arrows()}{move\_with\_arrows()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ move\+\_\+with\+\_\+arrows (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{spr,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+adress,  }\item[{uint8\+\_\+t $\ast$}]{addrs }\end{DoxyParamCaption})}
+
+
+
+moves sprite using arrow keys 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spr} & sprite \\
+\hline
+{\em init\+\_\+adress} & main buffer \\
+\hline
+{\em addrs} & secondary buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_ga4c05e4be3c1959155411619183e1bb54}\label{group__sprite_ga4c05e4be3c1959155411619183e1bb54}} 
+\index{Sprite@{Sprite}!move\_with\_mouse@{move\_with\_mouse}}
+\index{move\_with\_mouse@{move\_with\_mouse}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{move\_with\_mouse()}{move\_with\_mouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_sprite}{Sprite}}$\ast$ move\+\_\+with\+\_\+mouse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{spr,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+adress,  }\item[{uint8\+\_\+t $\ast$}]{addrs,  }\item[{struct packet}]{pp }\end{DoxyParamCaption})}
+
+
+
+moves sprite using mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spr} & sprite \\
+\hline
+{\em init\+\_\+adress} & main buffer \\
+\hline
+{\em addrs} & secondary buffer \\
+\hline
+{\em pp} & packet from mouse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sprite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__sprite_ga711da497c094f1fcf0138556b4da0246}\label{group__sprite_ga711da497c094f1fcf0138556b4da0246}} 
+\index{Sprite@{Sprite}!updateBuffer@{updateBuffer}}
+\index{updateBuffer@{updateBuffer}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{updateBuffer()}{updateBuffer()}}
+{\footnotesize\ttfamily void() update\+Buffer (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{principal,  }\item[{uint8\+\_\+t $\ast$}]{secondary }\end{DoxyParamCaption})}
+
+
+
+double buffer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em principal} & main buffer \\
+\hline
+{\em secondary} & secondary buffer \\
+\hline
+\end{DoxyParams}

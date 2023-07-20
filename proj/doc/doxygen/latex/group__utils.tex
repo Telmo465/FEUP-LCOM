@@ -1,0 +1,317 @@
+\hypertarget{group__utils}{}\doxysection{utils}
+\label{group__utils}\index{utils@{utils}}
+
+
+L\+C\+OM\textquotesingle{}s utility functions.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_player}{Player}}
+\begin{DoxyCompactList}\small\item\em struct \mbox{\hyperlink{struct_player}{Player}} with players info \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__utils_ga81621440b3d65680979425e39aa8c789}{util\+\_\+get\+\_\+\+L\+SB}} (uint16\+\_\+t val, uint8\+\_\+t $\ast$lsb)
+\begin{DoxyCompactList}\small\item\em Returns the L\+SB of a 2 byte integer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__utils_ga6a880076cd2ec468834438b6e0c58836}{util\+\_\+get\+\_\+\+M\+SB}} (uint16\+\_\+t val, uint8\+\_\+t $\ast$msb)
+\begin{DoxyCompactList}\small\item\em Returns the M\+SB of a 2 byte integer. \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__utils_ga79a031a8611f5b2d6afa4158e92b0fb4}{util\+\_\+sys\+\_\+inb}} (int port, uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Invokes sys\+\_\+inb() system call but reads the value into a uint8\+\_\+t variable. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__utils_ga9cede96ce06528da4293f8ec6746b722}{End\+Game}} (\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$spr, uint8\+\_\+t $\ast$addrs, uint8\+\_\+t $\ast$init\+\_\+address, int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em function that displays endgame menu \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__utils_ga08ab9c32e45f93629827d603b547f1cb}{draw\+Background}} (xpm\+\_\+map\+\_\+t map, uint8\+\_\+t $\ast$addrs)
+\begin{DoxyCompactList}\small\item\em draws ingame background \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__utils_ga3927c732aeccae4bd64871114aaa0bac}{Two\+Sec}} (int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em counts two seconds \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__utils_ga288a9f97cae970a8d4478df621f49689}{One\+Sec}} (int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em counts one second \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__utils_ga2c21ca7542efe621f618a58a2915a808}{Half\+Sec}} (int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em counts half of a second \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__utils_ga0f5b79cf4cf153e881c14fbcf36f9e33}{Fala}} (char frase\mbox{[}$\,$\mbox{]}, uint8\+\_\+t $\ast$addrs, uint8\+\_\+t $\ast$init\+\_\+addrs, int size, int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em function that allows bosses to talk \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__utils_ga3e32f3db86ac3e7492ea6ef08f438ce5}{Fala\+Date}} (\mbox{\hyperlink{struct_date}{Date}} data, uint8\+\_\+t $\ast$addrs, uint8\+\_\+t $\ast$init\+\_\+addrs, int size, int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em same function as Fala but receives an object from struct \mbox{\hyperlink{struct_date}{Date}} instead of an array \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__utils_ga62614b4ab0ecbc6c8b857bdcf33e4094}{Fala2}} (char frase\mbox{[}$\,$\mbox{]}, uint8\+\_\+t $\ast$addrs, uint8\+\_\+t $\ast$init\+\_\+addrs, int size, int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em same function as Fala but on different coordinates \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__utils_gaf1ec032dcdd0b70d7d6d72b5ab1cd043}{Fala\+Branco}} (char frase\mbox{[}$\,$\mbox{]}, uint8\+\_\+t $\ast$addrs, uint8\+\_\+t $\ast$init\+\_\+addrs, int size, int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em same function as Fala but with white letters \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+L\+C\+OM\textquotesingle{}s utility functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__utils_ga08ab9c32e45f93629827d603b547f1cb}\label{group__utils_ga08ab9c32e45f93629827d603b547f1cb}} 
+\index{utils@{utils}!drawBackground@{drawBackground}}
+\index{drawBackground@{drawBackground}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{drawBackground()}{drawBackground()}}
+{\footnotesize\ttfamily void draw\+Background (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{map,  }\item[{uint8\+\_\+t $\ast$}]{addrs }\end{DoxyParamCaption})}
+
+
+
+draws ingame background 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & array with the background information \\
+\hline
+{\em addrs} & buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__utils_ga9cede96ce06528da4293f8ec6746b722}\label{group__utils_ga9cede96ce06528da4293f8ec6746b722}} 
+\index{utils@{utils}!EndGame@{EndGame}}
+\index{EndGame@{EndGame}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{EndGame()}{EndGame()}}
+{\footnotesize\ttfamily bool End\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{spr,  }\item[{uint8\+\_\+t $\ast$}]{addrs,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+address,  }\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+function that displays endgame menu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spr} & player\textquotesingle{}s sprite \\
+\hline
+{\em addrs} & secondary buffer \\
+\hline
+{\em init\+\_\+address} & main buffer \\
+\hline
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__utils_ga0f5b79cf4cf153e881c14fbcf36f9e33}\label{group__utils_ga0f5b79cf4cf153e881c14fbcf36f9e33}} 
+\index{utils@{utils}!Fala@{Fala}}
+\index{Fala@{Fala}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{Fala()}{Fala()}}
+{\footnotesize\ttfamily void Fala (\begin{DoxyParamCaption}\item[{char}]{frase\mbox{[}$\,$\mbox{]},  }\item[{uint8\+\_\+t $\ast$}]{addrs,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+addrs,  }\item[{int}]{size,  }\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+function that allows bosses to talk 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frase} & contains the information regarding what the boss will say \\
+\hline
+{\em addrs} & secondary buffer \\
+\hline
+{\em init\+\_\+addrs} & main buffer \\
+\hline
+{\em size} & array size \\
+\hline
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__utils_ga62614b4ab0ecbc6c8b857bdcf33e4094}\label{group__utils_ga62614b4ab0ecbc6c8b857bdcf33e4094}} 
+\index{utils@{utils}!Fala2@{Fala2}}
+\index{Fala2@{Fala2}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{Fala2()}{Fala2()}}
+{\footnotesize\ttfamily void Fala2 (\begin{DoxyParamCaption}\item[{char}]{frase\mbox{[}$\,$\mbox{]},  }\item[{uint8\+\_\+t $\ast$}]{addrs,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+addrs,  }\item[{int}]{size,  }\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+same function as Fala but on different coordinates 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frase} & \\
+\hline
+{\em addrs} & \\
+\hline
+{\em init\+\_\+addrs} & \\
+\hline
+{\em size} & \\
+\hline
+{\em t\+\_\+irq} & \\
+\hline
+{\em k\+\_\+irq} & \\
+\hline
+{\em m\+\_\+irq} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__utils_gaf1ec032dcdd0b70d7d6d72b5ab1cd043}\label{group__utils_gaf1ec032dcdd0b70d7d6d72b5ab1cd043}} 
+\index{utils@{utils}!FalaBranco@{FalaBranco}}
+\index{FalaBranco@{FalaBranco}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FalaBranco()}{FalaBranco()}}
+{\footnotesize\ttfamily void Fala\+Branco (\begin{DoxyParamCaption}\item[{char}]{frase\mbox{[}$\,$\mbox{]},  }\item[{uint8\+\_\+t $\ast$}]{addrs,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+addrs,  }\item[{int}]{size,  }\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+same function as Fala but with white letters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frase} & \\
+\hline
+{\em addrs} & \\
+\hline
+{\em init\+\_\+addrs} & \\
+\hline
+{\em size} & \\
+\hline
+{\em t\+\_\+irq} & \\
+\hline
+{\em k\+\_\+irq} & \\
+\hline
+{\em m\+\_\+irq} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__utils_ga3e32f3db86ac3e7492ea6ef08f438ce5}\label{group__utils_ga3e32f3db86ac3e7492ea6ef08f438ce5}} 
+\index{utils@{utils}!FalaDate@{FalaDate}}
+\index{FalaDate@{FalaDate}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FalaDate()}{FalaDate()}}
+{\footnotesize\ttfamily void Fala\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date}{Date}}}]{data,  }\item[{uint8\+\_\+t $\ast$}]{addrs,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+addrs,  }\item[{int}]{size,  }\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+same function as Fala but receives an object from struct \mbox{\hyperlink{struct_date}{Date}} instead of an array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frase} & contains the information regarding what the boss will say \\
+\hline
+{\em addrs} & secondary buffer \\
+\hline
+{\em init\+\_\+addrs} & main buffer \\
+\hline
+{\em size} & array size \\
+\hline
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__utils_ga2c21ca7542efe621f618a58a2915a808}\label{group__utils_ga2c21ca7542efe621f618a58a2915a808}} 
+\index{utils@{utils}!HalfSec@{HalfSec}}
+\index{HalfSec@{HalfSec}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{HalfSec()}{HalfSec()}}
+{\footnotesize\ttfamily void Half\+Sec (\begin{DoxyParamCaption}\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+counts half of a second 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__utils_ga288a9f97cae970a8d4478df621f49689}\label{group__utils_ga288a9f97cae970a8d4478df621f49689}} 
+\index{utils@{utils}!OneSec@{OneSec}}
+\index{OneSec@{OneSec}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{OneSec()}{OneSec()}}
+{\footnotesize\ttfamily void One\+Sec (\begin{DoxyParamCaption}\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+counts one second 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__utils_ga3927c732aeccae4bd64871114aaa0bac}\label{group__utils_ga3927c732aeccae4bd64871114aaa0bac}} 
+\index{utils@{utils}!TwoSec@{TwoSec}}
+\index{TwoSec@{TwoSec}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{TwoSec()}{TwoSec()}}
+{\footnotesize\ttfamily void Two\+Sec (\begin{DoxyParamCaption}\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+counts two seconds 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__utils_ga81621440b3d65680979425e39aa8c789}\label{group__utils_ga81621440b3d65680979425e39aa8c789}} 
+\index{utils@{utils}!util\_get\_LSB@{util\_get\_LSB}}
+\index{util\_get\_LSB@{util\_get\_LSB}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{util\_get\_LSB()}{util\_get\_LSB()}}
+{\footnotesize\ttfamily int() util\+\_\+get\+\_\+\+L\+SB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val,  }\item[{uint8\+\_\+t $\ast$}]{lsb }\end{DoxyParamCaption})}
+
+
+
+Returns the L\+SB of a 2 byte integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & input 2 byte integer \\
+\hline
+{\em lsb} & address of memory location to be updated with val\textquotesingle{}s L\+SB \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__utils_ga6a880076cd2ec468834438b6e0c58836}\label{group__utils_ga6a880076cd2ec468834438b6e0c58836}} 
+\index{utils@{utils}!util\_get\_MSB@{util\_get\_MSB}}
+\index{util\_get\_MSB@{util\_get\_MSB}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{util\_get\_MSB()}{util\_get\_MSB()}}
+{\footnotesize\ttfamily int() util\+\_\+get\+\_\+\+M\+SB (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{val,  }\item[{uint8\+\_\+t $\ast$}]{msb }\end{DoxyParamCaption})}
+
+
+
+Returns the M\+SB of a 2 byte integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & input 2 byte integer \\
+\hline
+{\em msb} & address of memory location to be updated with val\textquotesingle{}s L\+SB \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__utils_ga79a031a8611f5b2d6afa4158e92b0fb4}\label{group__utils_ga79a031a8611f5b2d6afa4158e92b0fb4}} 
+\index{utils@{utils}!util\_sys\_inb@{util\_sys\_inb}}
+\index{util\_sys\_inb@{util\_sys\_inb}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{util\_sys\_inb()}{util\_sys\_inb()}}
+{\footnotesize\ttfamily int() util\+\_\+sys\+\_\+inb (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Invokes sys\+\_\+inb() system call but reads the value into a uint8\+\_\+t variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & the input port that is to be read \\
+\hline
+{\em value} & address of 8-\/bit variable to be update with the value read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}

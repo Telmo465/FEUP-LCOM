@@ -1,0 +1,56 @@
+\hypertarget{group__keyboard}{}\doxysection{keyboard}
+\label{group__keyboard}\index{keyboard@{keyboard}}
+
+
+Functions related to the keyboard.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__keyboard_ga5761bd4aad91ac1d68916ad88f583d9f}\label{group__keyboard_ga5761bd4aad91ac1d68916ad88f583d9f}} 
+void() \mbox{\hyperlink{group__keyboard_ga5761bd4aad91ac1d68916ad88f583d9f}{kbc\+\_\+ih}} (void)
+\begin{DoxyCompactList}\small\item\em keyboard handler \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_ga178b1db0b319dccad2840cc3fd273132}{keyboard\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes mouse interrupts \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__keyboard_ga32cc4de66854f8a7bd909e7aa8b901ed}{keyboard\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes mouse interrupts \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions related to the keyboard. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__keyboard_ga178b1db0b319dccad2840cc3fd273132}\label{group__keyboard_ga178b1db0b319dccad2840cc3fd273132}} 
+\index{keyboard@{keyboard}!keyboard\_subscribe\_int@{keyboard\_subscribe\_int}}
+\index{keyboard\_subscribe\_int@{keyboard\_subscribe\_int}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{keyboard\_subscribe\_int()}{keyboard\_subscribe\_int()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+subscribes mouse interrupts 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & bit number pointer set in the interrupt mask \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__keyboard_ga32cc4de66854f8a7bd909e7aa8b901ed}\label{group__keyboard_ga32cc4de66854f8a7bd909e7aa8b901ed}} 
+\index{keyboard@{keyboard}!keyboard\_unsubscribe\_int@{keyboard\_unsubscribe\_int}}
+\index{keyboard\_unsubscribe\_int@{keyboard\_unsubscribe\_int}!keyboard@{keyboard}}
+\doxysubsubsection{\texorpdfstring{keyboard\_unsubscribe\_int()}{keyboard\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int() keyboard\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribes mouse interrupts 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise 
+\end{DoxyReturn}

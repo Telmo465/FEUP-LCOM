@@ -1,0 +1,61 @@
+\hypertarget{struct_sprite}{}\doxysection{Sprite Struct Reference}
+\label{struct_sprite}\index{Sprite@{Sprite}}
+
+
+{\ttfamily \#include $<$sprite.\+h$>$}
+
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_sprite_a6150e0515f7202e2fb518f7206ed97dc}\label{struct_sprite_a6150e0515f7202e2fb518f7206ed97dc}} 
+int {\bfseries x}
+\item 
+int \mbox{\hyperlink{struct_sprite_a0a2f84ed7838f07779ae24c5a9086d33}{y}}
+\item 
+\mbox{\Hypertarget{struct_sprite_a2474a5474cbff19523a51eb1de01cda4}\label{struct_sprite_a2474a5474cbff19523a51eb1de01cda4}} 
+int {\bfseries width}
+\item 
+int \mbox{\hyperlink{struct_sprite_ad12fc34ce789bce6c8a05d8a17138534}{height}}
+\item 
+\mbox{\Hypertarget{struct_sprite_a90b9d56e145baae469f7b6bb757d9b27}\label{struct_sprite_a90b9d56e145baae469f7b6bb757d9b27}} 
+int {\bfseries xspeed}
+\item 
+int \mbox{\hyperlink{struct_sprite_a8e19090b4aa5dd9bb43efe8b74488f6d}{yspeed}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{struct_sprite_a4577e3e46b0a54eeeaca3e82486ca335}{map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{struct_sprite}{Sprite}} is an \char`\"{}object\char`\"{} that contains all needed information to create, animate, and destroy a pixmap. The functions assume that the background is B\+L\+A\+CK and they take into account collision with other graphical objects or the screen limits. 
+
+\doxysubsection{Field Documentation}
+\mbox{\Hypertarget{struct_sprite_ad12fc34ce789bce6c8a05d8a17138534}\label{struct_sprite_ad12fc34ce789bce6c8a05d8a17138534}} 
+\index{Sprite@{Sprite}!height@{height}}
+\index{height@{height}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int height}
+
+sprite dimensions \mbox{\Hypertarget{struct_sprite_a4577e3e46b0a54eeeaca3e82486ca335}\label{struct_sprite_a4577e3e46b0a54eeeaca3e82486ca335}} 
+\index{Sprite@{Sprite}!map@{map}}
+\index{map@{map}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily unsigned char$\ast$ map}
+
+the sprite pixmap (use read\+\_\+xpm()) \mbox{\Hypertarget{struct_sprite_a0a2f84ed7838f07779ae24c5a9086d33}\label{struct_sprite_a0a2f84ed7838f07779ae24c5a9086d33}} 
+\index{Sprite@{Sprite}!y@{y}}
+\index{y@{y}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int y}
+
+current sprite position \mbox{\Hypertarget{struct_sprite_a8e19090b4aa5dd9bb43efe8b74488f6d}\label{struct_sprite_a8e19090b4aa5dd9bb43efe8b74488f6d}} 
+\index{Sprite@{Sprite}!yspeed@{yspeed}}
+\index{yspeed@{yspeed}!Sprite@{Sprite}}
+\doxysubsubsection{\texorpdfstring{yspeed}{yspeed}}
+{\footnotesize\ttfamily int yspeed}
+
+current speeds in the x and y direction 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sprite.\+h\end{DoxyCompactItemize}

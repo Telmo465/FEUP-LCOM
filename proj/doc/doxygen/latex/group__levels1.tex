@@ -1,0 +1,203 @@
+\hypertarget{group__levels1}{}\doxysection{levels1}
+\label{group__levels1}\index{levels1@{levels1}}
+
+
+Functions related to the extreme level.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__levels1_ga79266ce4ef84ccf9fd56d1f1c793361e}{hit\+Flowey}} (int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq, uint8\+\_\+t $\ast$init\+\_\+address, uint8\+\_\+t $\ast$temp\+\_\+address)
+\begin{DoxyCompactList}\small\item\em function for attacking the level\textquotesingle{}s boss \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__levels1_ga677f646be39b759b34383e6398994fe8}{Easy\+Level}} (uint8\+\_\+t $\ast$addrs, uint8\+\_\+t $\ast$init\+\_\+addrs, int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em first dialogue of the level \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__levels1_gae62c0a56186b5f82106b91a487b44aea}{Easy\+Level2}} (uint8\+\_\+t $\ast$addrs, uint8\+\_\+t $\ast$init\+\_\+addrs, int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em second dialogue of the level \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__levels1_ga8fe6ff255ef2dea6c653bc70576bdab2}{Easy\+Level3}} (uint8\+\_\+t $\ast$addrs, uint8\+\_\+t $\ast$init\+\_\+addrs, int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em third dialogue of the level \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__levels1_ga9f1d96a2fad0ebf5b40fefde15795d4b}{Easy\+Level4}} (uint8\+\_\+t $\ast$addrs, uint8\+\_\+t $\ast$init\+\_\+addrs, int t\+\_\+irq, int k\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em fourth dialogue of the level \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__levels1_ga4c9260a1186176e21315cabd376fa9e1}{Easy\+First\+Wave}} (uint8\+\_\+t $\ast$addrs, uint8\+\_\+t $\ast$init\+\_\+addrs, int k\+\_\+irq, int t\+\_\+irq, int m\+\_\+irq, struct \mbox{\hyperlink{struct_player}{Player}} p, uint16\+\_\+t xi, uint16\+\_\+t yi, \mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$spr)
+\begin{DoxyCompactList}\small\item\em first game wave of the level \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__levels1_ga9fd6a5817b56ff348cf7fdc25ef4f27a}{Flowey\+Level}} (xpm\+\_\+map\+\_\+t xpm, uint16\+\_\+t xi, uint16\+\_\+t yi, uint16\+\_\+t xf, uint16\+\_\+t yf, int16\+\_\+t speed, uint8\+\_\+t $\ast$init\+\_\+adress, int k\+\_\+irq, int t\+\_\+irq, int m\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em main level\textquotesingle{}s loop \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions related to the extreme level. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__levels1_ga4c9260a1186176e21315cabd376fa9e1}\label{group__levels1_ga4c9260a1186176e21315cabd376fa9e1}} 
+\index{levels1@{levels1}!EasyFirstWave@{EasyFirstWave}}
+\index{EasyFirstWave@{EasyFirstWave}!levels1@{levels1}}
+\doxysubsubsection{\texorpdfstring{EasyFirstWave()}{EasyFirstWave()}}
+{\footnotesize\ttfamily void Easy\+First\+Wave (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{addrs,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+addrs,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{t\+\_\+irq,  }\item[{int}]{m\+\_\+irq,  }\item[{struct \mbox{\hyperlink{struct_player}{Player}}}]{p,  }\item[{uint16\+\_\+t}]{xi,  }\item[{uint16\+\_\+t}]{yi,  }\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} $\ast$}]{spr }\end{DoxyParamCaption})}
+
+
+
+first game wave of the level 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addrs} & secondary buffer \\
+\hline
+{\em init\+\_\+addrs} & main buffer \\
+\hline
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__levels1_ga677f646be39b759b34383e6398994fe8}\label{group__levels1_ga677f646be39b759b34383e6398994fe8}} 
+\index{levels1@{levels1}!EasyLevel@{EasyLevel}}
+\index{EasyLevel@{EasyLevel}!levels1@{levels1}}
+\doxysubsubsection{\texorpdfstring{EasyLevel()}{EasyLevel()}}
+{\footnotesize\ttfamily void Easy\+Level (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{addrs,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+addrs,  }\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+first dialogue of the level 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addrs} & secondary buffer \\
+\hline
+{\em init\+\_\+addrs} & main buffer \\
+\hline
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__levels1_gae62c0a56186b5f82106b91a487b44aea}\label{group__levels1_gae62c0a56186b5f82106b91a487b44aea}} 
+\index{levels1@{levels1}!EasyLevel2@{EasyLevel2}}
+\index{EasyLevel2@{EasyLevel2}!levels1@{levels1}}
+\doxysubsubsection{\texorpdfstring{EasyLevel2()}{EasyLevel2()}}
+{\footnotesize\ttfamily void Easy\+Level2 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{addrs,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+addrs,  }\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+second dialogue of the level 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addrs} & secondary buffer \\
+\hline
+{\em init\+\_\+addrs} & main buffer \\
+\hline
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__levels1_ga8fe6ff255ef2dea6c653bc70576bdab2}\label{group__levels1_ga8fe6ff255ef2dea6c653bc70576bdab2}} 
+\index{levels1@{levels1}!EasyLevel3@{EasyLevel3}}
+\index{EasyLevel3@{EasyLevel3}!levels1@{levels1}}
+\doxysubsubsection{\texorpdfstring{EasyLevel3()}{EasyLevel3()}}
+{\footnotesize\ttfamily void Easy\+Level3 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{addrs,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+addrs,  }\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+third dialogue of the level 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addrs} & secondary buffer \\
+\hline
+{\em init\+\_\+addrs} & main buffer \\
+\hline
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__levels1_ga9f1d96a2fad0ebf5b40fefde15795d4b}\label{group__levels1_ga9f1d96a2fad0ebf5b40fefde15795d4b}} 
+\index{levels1@{levels1}!EasyLevel4@{EasyLevel4}}
+\index{EasyLevel4@{EasyLevel4}!levels1@{levels1}}
+\doxysubsubsection{\texorpdfstring{EasyLevel4()}{EasyLevel4()}}
+{\footnotesize\ttfamily void Easy\+Level4 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{addrs,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+addrs,  }\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+fourth dialogue of the level 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addrs} & secondary buffer \\
+\hline
+{\em init\+\_\+addrs} & main buffer \\
+\hline
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__levels1_ga9fd6a5817b56ff348cf7fdc25ef4f27a}\label{group__levels1_ga9fd6a5817b56ff348cf7fdc25ef4f27a}} 
+\index{levels1@{levels1}!FloweyLevel@{FloweyLevel}}
+\index{FloweyLevel@{FloweyLevel}!levels1@{levels1}}
+\doxysubsubsection{\texorpdfstring{FloweyLevel()}{FloweyLevel()}}
+{\footnotesize\ttfamily void Flowey\+Level (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm,  }\item[{uint16\+\_\+t}]{xi,  }\item[{uint16\+\_\+t}]{yi,  }\item[{uint16\+\_\+t}]{xf,  }\item[{uint16\+\_\+t}]{yf,  }\item[{int16\+\_\+t}]{speed,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+adress,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{t\+\_\+irq,  }\item[{int}]{m\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+main level\textquotesingle{}s loop 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm} & player\textquotesingle{}s xpm \\
+\hline
+{\em xi} & initial x coordinates \\
+\hline
+{\em yi} & initial y coordinates \\
+\hline
+{\em xf} & final x coordinates \\
+\hline
+{\em yf} & final y coordinates \\
+\hline
+{\em speed} & sprite\textquotesingle{}s speed \\
+\hline
+{\em init\+\_\+adress} & main buffer \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__levels1_ga79266ce4ef84ccf9fd56d1f1c793361e}\label{group__levels1_ga79266ce4ef84ccf9fd56d1f1c793361e}} 
+\index{levels1@{levels1}!hitFlowey@{hitFlowey}}
+\index{hitFlowey@{hitFlowey}!levels1@{levels1}}
+\doxysubsubsection{\texorpdfstring{hitFlowey()}{hitFlowey()}}
+{\footnotesize\ttfamily void hit\+Flowey (\begin{DoxyParamCaption}\item[{int}]{t\+\_\+irq,  }\item[{int}]{k\+\_\+irq,  }\item[{int}]{m\+\_\+irq,  }\item[{uint8\+\_\+t $\ast$}]{init\+\_\+address,  }\item[{uint8\+\_\+t $\ast$}]{temp\+\_\+address }\end{DoxyParamCaption})}
+
+
+
+function for attacking the level\textquotesingle{}s boss 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t\+\_\+irq} & timer interruptions \\
+\hline
+{\em k\+\_\+irq} & keyboard interruptions \\
+\hline
+{\em m\+\_\+irq} & mouse interruptions \\
+\hline
+{\em init\+\_\+address} & main buffer \\
+\hline
+{\em temp\+\_\+address} & secondary buffer \\
+\hline
+\end{DoxyParams}

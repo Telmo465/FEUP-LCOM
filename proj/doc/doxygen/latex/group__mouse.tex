@@ -1,0 +1,110 @@
+\hypertarget{group__mouse}{}\doxysection{mouse}
+\label{group__mouse}\index{mouse@{mouse}}
+
+
+Functions related to the mouse.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \mbox{\hyperlink{group__mouse_ga20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes mouse interruptions \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_gaab5e1dc43daf2cc458f26d87211b994f}{mouse\+\_\+unsubscribe}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribes mouse notifications \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga35c58917044061eb86eb55cd7dbd5e5b}{issue\+Command}} (port\+\_\+t port, u32\+\_\+t cmd)
+\begin{DoxyCompactList}\small\item\em checks for error and writes cmd to the specified port \end{DoxyCompactList}\item 
+int() \mbox{\hyperlink{group__mouse_ga4815e0421f1a852075fa9ecd39cff778}{write\+\_\+mouse\+\_\+command}} (u32\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em writes the command to the mouse \end{DoxyCompactList}\item 
+void() \mbox{\hyperlink{group__mouse_gac639beb13a8ea5c0442f0bb2692b4a3a}{mouse\+\_\+parse\+\_\+packet}} (uint8\+\_\+t $\ast$bytes, struct packet $\ast$pp)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions related to the mouse. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__mouse_ga35c58917044061eb86eb55cd7dbd5e5b}\label{group__mouse_ga35c58917044061eb86eb55cd7dbd5e5b}} 
+\index{mouse@{mouse}!issueCommand@{issueCommand}}
+\index{issueCommand@{issueCommand}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{issueCommand()}{issueCommand()}}
+{\footnotesize\ttfamily int() issue\+Command (\begin{DoxyParamCaption}\item[{port\+\_\+t}]{port,  }\item[{u32\+\_\+t}]{cmd }\end{DoxyParamCaption})}
+
+
+
+checks for error and writes cmd to the specified port 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & address of the specified port \\
+\hline
+{\em cmd} & command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mouse_gac639beb13a8ea5c0442f0bb2692b4a3a}\label{group__mouse_gac639beb13a8ea5c0442f0bb2692b4a3a}} 
+\index{mouse@{mouse}!mouse\_parse\_packet@{mouse\_parse\_packet}}
+\index{mouse\_parse\_packet@{mouse\_parse\_packet}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_parse\_packet()}{mouse\_parse\_packet()}}
+{\footnotesize\ttfamily void() mouse\+\_\+parse\+\_\+packet (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bytes,  }\item[{struct packet $\ast$}]{pp }\end{DoxyParamCaption})}
+
+@briefe processes the packets from the mouse 
+\begin{DoxyParams}{Parameters}
+{\em bytes} & bytes from the mouse packets \\
+\hline
+{\em pp} & packet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__mouse_ga20285aed4b3ef45812cd967532dd09db}\label{group__mouse_ga20285aed4b3ef45812cd967532dd09db}} 
+\index{mouse@{mouse}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
+\index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily int() mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+subscribes mouse interruptions 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & bit number pointer set in the interrupt mask \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon sucess, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mouse_gaab5e1dc43daf2cc458f26d87211b994f}\label{group__mouse_gaab5e1dc43daf2cc458f26d87211b994f}} 
+\index{mouse@{mouse}!mouse\_unsubscribe@{mouse\_unsubscribe}}
+\index{mouse\_unsubscribe@{mouse\_unsubscribe}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe()}{mouse\_unsubscribe()}}
+{\footnotesize\ttfamily int() mouse\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribes mouse notifications 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__mouse_ga4815e0421f1a852075fa9ecd39cff778}\label{group__mouse_ga4815e0421f1a852075fa9ecd39cff778}} 
+\index{mouse@{mouse}!write\_mouse\_command@{write\_mouse\_command}}
+\index{write\_mouse\_command@{write\_mouse\_command}!mouse@{mouse}}
+\doxysubsubsection{\texorpdfstring{write\_mouse\_command()}{write\_mouse\_command()}}
+{\footnotesize\ttfamily int() write\+\_\+mouse\+\_\+command (\begin{DoxyParamCaption}\item[{u32\+\_\+t}]{command }\end{DoxyParamCaption})}
+
+
+
+writes the command to the mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & specified command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise 
+\end{DoxyReturn}

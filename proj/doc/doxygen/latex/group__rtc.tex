@@ -1,0 +1,138 @@
+\hypertarget{group__rtc}{}\doxysection{rtc}
+\label{group__rtc}\index{rtc@{rtc}}
+
+
+Functions related to the R\+TC.  
+
+
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_date}{Date}}
+\begin{DoxyCompactList}\small\item\em struct with date members \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__rtc_ga4e22feb6ffbc1cda32fadff5c740dc51}\label{group__rtc_ga4e22feb6ffbc1cda32fadff5c740dc51}} 
+\#define {\bfseries R\+T\+C\+\_\+\+I\+RQ}~8
+\item 
+\mbox{\Hypertarget{group__rtc_ga710b98232df2c563009e6f8a6cd18220}\label{group__rtc_ga710b98232df2c563009e6f8a6cd18220}} 
+\#define {\bfseries R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG}~0x70
+\item 
+\mbox{\Hypertarget{group__rtc_ga2f258a00c59c3f347c8d2d4a75471ce0}\label{group__rtc_ga2f258a00c59c3f347c8d2d4a75471ce0}} 
+\#define {\bfseries R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG}~0x71
+\item 
+\mbox{\Hypertarget{group__rtc_gaf54119cc0b644ea37bd26ac9206264a8}\label{group__rtc_gaf54119cc0b644ea37bd26ac9206264a8}} 
+\#define {\bfseries Y\+E\+A\+R\+\_\+\+R\+EG}~9
+\item 
+\mbox{\Hypertarget{group__rtc_gaf97fbfe83998eef17fb98285c7b366e3}\label{group__rtc_gaf97fbfe83998eef17fb98285c7b366e3}} 
+\#define {\bfseries M\+O\+N\+T\+H\+\_\+\+R\+EG}~8
+\item 
+\mbox{\Hypertarget{group__rtc_gaeffd8cec7eae259d17fdb3604269bcc5}\label{group__rtc_gaeffd8cec7eae259d17fdb3604269bcc5}} 
+\#define {\bfseries D\+A\+Y\+\_\+\+R\+EG}~7
+\item 
+\mbox{\Hypertarget{group__rtc_ga000295dbd700b0b8657dc519fb34242c}\label{group__rtc_ga000295dbd700b0b8657dc519fb34242c}} 
+\#define {\bfseries H\+O\+U\+R\+\_\+\+R\+EG}~4
+\item 
+\mbox{\Hypertarget{group__rtc_ga08031ac4a677a5c410bd110a436aee0d}\label{group__rtc_ga08031ac4a677a5c410bd110a436aee0d}} 
+\#define {\bfseries M\+I\+N\+U\+T\+E\+\_\+\+R\+EG}~2
+\item 
+\mbox{\Hypertarget{group__rtc_ga7f2a85bd7a76a9896496b05e90e2d71d}\label{group__rtc_ga7f2a85bd7a76a9896496b05e90e2d71d}} 
+\#define {\bfseries S\+E\+C\+O\+N\+D\+\_\+\+R\+EG}~0
+\item 
+\mbox{\Hypertarget{group__rtc_gaa0e40d1cb9fea79e800aa79b8ca291f7}\label{group__rtc_gaa0e40d1cb9fea79e800aa79b8ca291f7}} 
+\#define {\bfseries R\+E\+G\+\_\+A}~10
+\item 
+\mbox{\Hypertarget{group__rtc_ga28ed75c6727784e56c2bb8d828c876c9}\label{group__rtc_ga28ed75c6727784e56c2bb8d828c876c9}} 
+\#define {\bfseries R\+E\+G\+\_\+B}~11
+\item 
+\mbox{\Hypertarget{group__rtc_ga94a68d7ecafe31a0109c5a28281ac00d}\label{group__rtc_ga94a68d7ecafe31a0109c5a28281ac00d}} 
+\#define {\bfseries B\+C\+D\+\_\+\+M\+A\+SK}~0x04
+\item 
+\mbox{\Hypertarget{group__rtc_ga32e58e134a2ba8c1b09bb4f7795c1904}\label{group__rtc_ga32e58e134a2ba8c1b09bb4f7795c1904}} 
+\#define {\bfseries U\+I\+P\+\_\+\+M\+A\+SK}~0x80
+\item 
+\mbox{\Hypertarget{group__rtc_ga70258db61a8962af960e06fd3103a03b}\label{group__rtc_ga70258db61a8962af960e06fd3103a03b}} 
+\#define {\bfseries T\+I\+M\+E\+\_\+\+T\+O\+\_\+\+U\+P\+D\+A\+TE}~244
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__rtc_ga5171a9c0f54940fe60f7500896afcc86}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em subscribes the rtc \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__rtc_gab8f17bf5280c908c8b199a90fefcc758}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\begin{DoxyCompactList}\small\item\em unsubscribe the rtc \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{group__rtc_gab75a365ad07a482f160ac6663018bda0}{convert\+\_\+to\+\_\+decimal}} (uint32\+\_\+t date)
+\begin{DoxyCompactList}\small\item\em converts date to decimal \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_date}{Date}} \mbox{\hyperlink{group__rtc_ga4a63e0f70248470cda33e150d4c332ac}{read\+\_\+date}} ()
+\begin{DoxyCompactList}\small\item\em reads the current date \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions related to the R\+TC. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group__rtc_gab75a365ad07a482f160ac6663018bda0}\label{group__rtc_gab75a365ad07a482f160ac6663018bda0}} 
+\index{rtc@{rtc}!convert\_to\_decimal@{convert\_to\_decimal}}
+\index{convert\_to\_decimal@{convert\_to\_decimal}!rtc@{rtc}}
+\doxysubsubsection{\texorpdfstring{convert\_to\_decimal()}{convert\_to\_decimal()}}
+{\footnotesize\ttfamily uint32\+\_\+t convert\+\_\+to\+\_\+decimal (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{date }\end{DoxyParamCaption})}
+
+
+
+converts date to decimal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & current date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtc_ga4a63e0f70248470cda33e150d4c332ac}\label{group__rtc_ga4a63e0f70248470cda33e150d4c332ac}} 
+\index{rtc@{rtc}!read\_date@{read\_date}}
+\index{read\_date@{read\_date}!rtc@{rtc}}
+\doxysubsubsection{\texorpdfstring{read\_date()}{read\_date()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_date}{Date}} read\+\_\+date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reads the current date 
+
+\begin{DoxyReturn}{Returns}
+current date 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtc_ga5171a9c0f54940fe60f7500896afcc86}\label{group__rtc_ga5171a9c0f54940fe60f7500896afcc86}} 
+\index{rtc@{rtc}!rtc\_subscribe\_int@{rtc\_subscribe\_int}}
+\index{rtc\_subscribe\_int@{rtc\_subscribe\_int}!rtc@{rtc}}
+\doxysubsubsection{\texorpdfstring{rtc\_subscribe\_int()}{rtc\_subscribe\_int()}}
+{\footnotesize\ttfamily int rtc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+subscribes the rtc 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & bit number pointer set in the interrupt mask \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__rtc_gab8f17bf5280c908c8b199a90fefcc758}\label{group__rtc_gab8f17bf5280c908c8b199a90fefcc758}} 
+\index{rtc@{rtc}!rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}}
+\index{rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}!rtc@{rtc}}
+\doxysubsubsection{\texorpdfstring{rtc\_unsubscribe\_int()}{rtc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily int rtc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unsubscribe the rtc 
+
+\begin{DoxyReturn}{Returns}
+0 upon success, 1 otherwise 
+\end{DoxyReturn}

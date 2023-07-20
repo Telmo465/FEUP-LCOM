@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['thirdwave_184',['ThirdWave',['../group__levels.html#ga03e6149488888fc6f484127032df7145',1,'ThirdWave(uint8_t *temp_address, uint8_t *init_adress, int k_irq, int t_irq, int m_irq, struct Player p, uint16_t xi, uint16_t yi, Sprite *spr):&#160;levels.c'],['../group__levels.html#ga03e6149488888fc6f484127032df7145',1,'ThirdWave(uint8_t *temp_address, uint8_t *init_adress, int k_irq, int t_irq, int m_irq, struct Player p, uint16_t xi, uint16_t yi, Sprite *spr):&#160;levels.c']]],
+  ['timer_5fdisplay_5fconf_185',['timer_display_conf',['../group__timer.html#ga2f6a1c71f61dce5b3b6eecba83e7d7e9',1,'timer_display_conf(uint8_t timer, uint8_t st, enum timer_status_field field):&#160;timer.c'],['../group__timer.html#ga2f6a1c71f61dce5b3b6eecba83e7d7e9',1,'timer_display_conf(uint8_t timer, uint8_t st, enum timer_status_field field):&#160;timer.c']]],
+  ['timer_5fget_5fconf_186',['timer_get_conf',['../group__timer.html#gafafc1891c876602d55b894103b1841a7',1,'timer_get_conf(uint8_t timer, uint8_t *st):&#160;timer.c'],['../group__timer.html#gafafc1891c876602d55b894103b1841a7',1,'timer_get_conf(uint8_t timer, uint8_t *st):&#160;timer.c']]],
+  ['timer_5fint_5fhandler_187',['timer_int_handler',['../group__timer.html#ga10fc9c867b15c7da6649311c9987cd17',1,'timer_int_handler():&#160;timer.c'],['../group__timer.html#ga10fc9c867b15c7da6649311c9987cd17',1,'timer_int_handler():&#160;timer.c']]],
+  ['timer_5fset_5ffrequency_188',['timer_set_frequency',['../group__timer.html#gaca1506be74dfc71c6f90772ca269c619',1,'timer.h']]],
+  ['timer_5fsubscribe_5fint_189',['timer_subscribe_int',['../group__timer.html#ga6f786481e80308348d629d605ffa2d84',1,'timer_subscribe_int(uint8_t *bit_no):&#160;timer.c'],['../group__timer.html#ga6f786481e80308348d629d605ffa2d84',1,'timer_subscribe_int(uint8_t *bit_no):&#160;timer.c']]],
+  ['timer_5funsubscribe_5fint_190',['timer_unsubscribe_int',['../group__timer.html#gab9eea51549744bca5c5c923b388bb4ee',1,'timer_unsubscribe_int():&#160;timer.c'],['../group__timer.html#gab9eea51549744bca5c5c923b388bb4ee',1,'timer_unsubscribe_int():&#160;timer.c']]],
+  ['twosec_191',['TwoSec',['../group__utils.html#ga3927c732aeccae4bd64871114aaa0bac',1,'TwoSec(int t_irq, int k_irq, int m_irq):&#160;utils.c'],['../group__utils.html#ga3927c732aeccae4bd64871114aaa0bac',1,'TwoSec(int t_irq, int k_irq, int m_irq):&#160;utils.c']]]
+];
